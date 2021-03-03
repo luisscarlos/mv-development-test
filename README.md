@@ -38,8 +38,8 @@
 
 ## Iniciando o Backend
 
-1. Abra o Eclipse ou a IDE que preferir  de desenvolvimento com Spring.
-2. Importe o projeto (menu Import/Maven/Existing Maven Projects) e execute o arquivo MvTestApplication.java para iniciar o backend.
+1. Abra o Eclipse ou a IDE que preferir para desenvolvimento com Spring.
+2. Importe o projeto (menu Import/Maven/Existing Maven Projects) e execute o arquivo src/main/java/com/mv/spring/mvtest/MvTestApplication.java para iniciar o backend.
 
 ## Iniciando a plataforma Web
 
@@ -57,7 +57,7 @@ Ao acessar a aplicação, é possível visualizar um painel lateral para criar o
 3. Associar funcionário à empresa. (apenas no back-end)
 ***
 
-## Fazendo asa chamadas GET, POST, UPDATE, DELETE diretamente na API
+## Fazendo chamadas GET, POST, UPDATE, DELETE diretamente na API
 1. Abra o Insomnia.
 2. Clique no título do workspace que fica no canto superior esquerdo.
 3. Selecione Import/Export.
