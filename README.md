@@ -39,7 +39,7 @@
 ## Iniciando o Backend
 
 1. Abra o Eclipse ou a IDE que preferir  de desenvolvimento com Spring.
-2. Importe o projeto e execute o arquivo MvTestApplication.java para iniciar o backend.
+2. Importe o projeto (menu Import/Maven/Existing Maven Projects) e execute o arquivo MvTestApplication.java para iniciar o backend.
 
 ## Iniciando a plataforma Web
 
