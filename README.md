@@ -9,10 +9,10 @@
 
 
   ![](https://img.shields.io/badge/autor-Luis%20Carlos-brightgreen)
-  ![](https://img.shields.io/badge/Front--End-Angular 11.2.2-brightgreen)
+  ![](https://img.shields.io/badge/Front--End-Angular-brightgreen)
   ![](https://img.shields.io/badge/Language-Typescript-brightgreen)
-  ![](https://img.shields.io/badge/Back--End-Spring Boot-brightgreen)
-  ![](https://img.shields.io/badge/Language-Java 8-brightgreen)
+  ![](https://img.shields.io/badge/Back--End-Spring-brightgreen)
+  ![](https://img.shields.io/badge/Language-Java-brightgreen)
 </div> 
 
 ## Alguns recursos utilizados
@@ -22,20 +22,28 @@
 - **[Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview)** — API de persistencia em Java.
 - **[Hibernate](https://hibernate.org/orm/)** - ORM para manipular e persitir a API.
 
+## Capturas de tela
+
+<div align="center">
+  <img src="https://github.com/luisscarlos/mv-development-test/blob/main/.github/list.PNG" height="300px" alt="MV Sistemas"/>
+  <img src="https://github.com/luisscarlos/mv-development-test/blob/main/.github/newPNG.PNG" height="300px" alt="MV Sistemas"/>
+  <img src="https://github.com/luisscarlos/mv-development-test/blob/main/.github/detail.PNG" height="300px" alt="MV Sistemas"/>
+  <img src="https://github.com/luisscarlos/mv-development-test/blob/main/.github/editPNG.PNG" height="300px" alt="MV Sistemas"/>
+</div>
 
 ## Iniciando
 
-1. Clone este  reposítório usando `git clone https://github.com/luisscarlos/mv-devtest.git`
-2. acesse a pasta do projeto via terminal com o comando: `cd mv-devtest`<br />
+1. Clone este  reposítório usando `git clone https://github.com/luisscarlos/mv-development-test.git`
+2. acesse a pasta do projeto via terminal com o comando: `cd mv-development-test`<br />
 
 ## Iniciando o Backend
 
-1. Acesse a pasta do backend no terminal: `cd backend`
-2. Utilize o comando  `npm start` para iniciar o servidor
+1. Abra o Eclipse ou a IDE que preferir  de desenvolvimento com Spring.
+2. Importe o projeto e execute o arquivo MvTestApplication.java para iniciar o backend.
 
 ## Iniciando a plataforma Web
 
-1. Em uma nova aba do terminal, acesse a pasta frontend: `cd web`
+1. Em uma aba do terminal, acesse a pasta frontend: `cd web`
 2. Utilize o comando  `npm install` para instalar as dependências
 3. Utilize o comando `npm start` para iniciar a aplicação no seu navegador
 
@@ -54,7 +62,7 @@ Ao acessar a aplicação, é possível visualizar um painel lateral para criar o
 2. Clique no título do workspace que fica no canto superior esquerdo.
 3. Selecione Import/Export.
 4. Depois, Import Data.
-5. From file e selecione o arquivo Insomnia_Requests.json da raiz do projeto.
+5. Escolha a opção From file e selecione o arquivo Insomnia_Requests.json da raiz do projeto.
 
 
 ## CONTATOS
