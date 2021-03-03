@@ -1,0 +1,15 @@
+.detail-container {
+  display: flex;
+  flex-direction: column;
+
+  mat-card {
+    width: 500px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 18px;
+  }
+
+  button {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="edit-company-container">
+  <div>
+    <h3>Editar Empresa</h3>
+  </div>
+  <mat-card>
+    <mat-card-content>
+      <form class="form-container" [formGroup]="companyForm" (ngSubmit)="updateCompany(companyForm.value)">
+        <mat-form-field>
+          <input matInput name="name" placeholder="Nome da empresa" formControlName="name">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input  matInput name="address" placeholder="Endereço" formControlName="address">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input matInput name="phoneNumber" placeholder="Telefone" formControlName="phoneNumber">
+        </mat-form-field>
+        <br/>
+
+        <button type="submit" [disabled]="!companyForm.valid" mat-button color="accent" >Editar</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

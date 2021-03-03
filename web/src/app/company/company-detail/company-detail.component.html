@@ -1,0 +1,22 @@
+<div class="detail-container mat-elevation-z8">
+  <div class="example-loading-shade"
+       *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <div class="button-row">
+    <button mat-flat-button color="accent" [routerLink]="['/companies']"><mat-icon>keyboard_arrow_left</mat-icon> Voltar</button>
+  </div>
+  <mat-card class="detail-card">
+    <mat-card-header>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Nome: {{company.name}}</p>
+      <p>Endereço: {{company.address}}</p>
+      <p>Telefone: {{company.phoneNumber}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary" class="teste" [routerLink]="['/company-edit', company.id]"><mat-icon>edit</mat-icon> Editar</button>
+      <button mat-flat-button color="warn" (click)="deleteCompany(company.id)"><mat-icon>delete</mat-icon> Excluir</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

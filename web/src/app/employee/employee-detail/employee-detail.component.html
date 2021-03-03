@@ -1,0 +1,24 @@
+<div class="detail-container mat-elevation-z8">
+  <div class="detail-loading-shade"
+       *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <div class="button-row">
+    <button mat-flat-button color="accent" [routerLink]="['/employees']"><mat-icon>keyboard_arrow_left</mat-icon> Voltar</button>
+  </div>
+  <mat-card class="detail-card">
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Nome: {{employee.name}}</mat-list-item>
+        <mat-list-item role="listitem">Endereço: {{employee.address}}</mat-list-item>
+        <mat-list-item role="listitem">Telefone: {{employee.phoneNumber}}</mat-list-item>
+        <mat-list-item role="listitem">Celular: {{employee.cellNumber}}</mat-list-item>
+        <mat-list-item role="listitem">Função: {{employee.role}}</mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary" class="edit" [routerLink]="['/employee-edit', employee.id]"><mat-icon>edit</mat-icon> Editar</button>
+      <button mat-flat-button color="warn" (click)="deleteEmployee(employee.id)"><mat-icon>delete</mat-icon> Excluir</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,33 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+      <img src="https://mv.com.br/assets/img/layout/logo-white.svg" alt="Logo MV" height="50px">
+    <mat-toolbar>Funcionários</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/employees" routerLinkActive="active">Listar funcionários</a>
+      <a mat-list-item routerLink="/employee-new" routerLinkActive="active">Novo funcionário</a>
+      <mat-divider></mat-divider>
+      <mat-toolbar>Empresas</mat-toolbar>
+      <a mat-list-item routerLink="/companies" routerLinkActive="active">Listar empresas</a>
+      <a mat-list-item routerLink="/company-new" routerLinkActive="active">Nova empresa</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="secondary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Painel Administrativo</span>
+    </mat-toolbar>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

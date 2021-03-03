@@ -1,0 +1,18 @@
+.new-company-container {
+  mat-card {
+    display: flex;
+    max-width: 500px;
+    mat-card-content {
+      form {
+        margin-left: 29%;
+        mat-form-field {
+          width: 300px;
+        }
+
+        button {
+          margin-left: 45%;
+        }
+      }
+    }
+  }
+}

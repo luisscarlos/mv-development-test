@@ -1,0 +1,33 @@
+<div class="new-employee-container">
+  <div>
+    <h3>Adicionar Novo Funcionário</h3>
+  </div>
+  <mat-card>
+    <mat-card-content>
+      <form class="form-container" [formGroup]="employeeForm" (ngSubmit)="addEmployee(employeeForm.value)">
+        <mat-form-field>
+          <input matInput name="name" placeholder="Nome do Funcionário" formControlName="name">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input  matInput name="address" placeholder="Endereço" formControlName="address">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input matInput name="phoneNumber" placeholder="Telefone" formControlName="phoneNumber">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input matInput name="cellNumber" placeholder="Celular" formControlName="cellNumber">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input matInput name="role" placeholder="Função" formControlName="role">
+        </mat-form-field>
+        <br/>
+        <button type="submit" [disabled]="!employeeForm.valid" mat-button color="primary" >Adicionar</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
